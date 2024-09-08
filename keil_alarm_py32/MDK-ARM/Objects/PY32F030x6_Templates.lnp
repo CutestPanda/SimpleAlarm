@@ -1,0 +1,27 @@
+--cpu Cortex-M0+
+".\objects\system_py32f0xx.o"
+".\objects\startup_py32f003xx.o"
+".\objects\main.o"
+".\objects\py32f0xx_hal_msp.o"
+".\objects\py32f0xx_it.o"
+".\objects\alarm.o"
+".\objects\single_key_detect.o"
+".\objects\timebase.o"
+".\objects\oled.o"
+".\objects\oled_gui.o"
+".\objects\temp_sensor.o"
+".\objects\beep.o"
+".\objects\py32f0xx_hal.o"
+".\objects\py32f0xx_hal_cortex.o"
+".\objects\py32f0xx_hal_dma.o"
+".\objects\py32f0xx_hal_pwr.o"
+".\objects\py32f0xx_hal_rcc.o"
+".\objects\py32f0xx_hal_rcc_ex.o"
+".\objects\py32f0xx_hal_gpio.o"
+".\objects\py32f0xx_hal_tim.o"
+".\objects\py32f0xx_hal_tim_ex.o"
+".\objects\py32f0xx_hal_i2c.o"
+--library_type=microlib --strict --scatter ".\Objects\PY32F030x6_Templates.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\PY32F030x6_Templates.map" -o .\Objects\PY32F030x6_Templates.axf
